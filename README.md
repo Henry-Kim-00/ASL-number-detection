@@ -32,6 +32,6 @@ This code inferred the hand images in the ./TermProjectSample.mp4 file using the
 Additionally, I coded code to recognize ASL numbers in real-time with the laptop's built-in camera using OpenCV. I can recognize the laptop user's hand gestures in real-time, which makes it easy to see which hand gestures the model is confused about.
 
 # 3) Results
-80% accuracy at TermProjectSample.mp4.
+80% accuracy at TermProjectSample.mp4.  
 ![image](https://github.com/user-attachments/assets/e0154c75-16cd-467a-82bd-df810a9ac3d2)
 
