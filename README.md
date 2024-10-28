@@ -20,16 +20,16 @@ This system is an ASL number recognition program that takes an image of a hand a
 
 Below is an overall description of the code that makes up this system.
 
-1. collect_imgs.ipynb 
+1. collect_imgs.ipynb \n
 Use the OpenCV program to capture the hand sign language images with the built-in camera of the laptop and save them in the ./data folder. In this project, we collected a total of 6000 images.
-2. create_dataset.ipynb 
-  Extract the hand landmark coordinate values using Mediapipe from the 600 hand images and save them to the data.pickle file along with the label values (1~10). 
-3. train_classifier.ipynb 
-  Train the MLP using the ./data.pickle file containing the hand landmark coordinate values and label values, and save the MLP model parameters in the ./model.p file. 
-4. inference_movie.ipynb 
-  This code inferred the hand images in the ./TermProjectSample.mp4 file using the ./model.p file and saved the output values in the ./answer/answers.txt file. Because the .mp4 file is running at 30 FPS and each image lasts 0.5 seconds, there are 15 frames for each image. The inference is performed on each frame, and because saving the output value to the .txt file after each inference saves the same value 15 times, the output value for each of the 15 frames can only be saved once in the . txt file. 
-5. inference.ipynb 
-  Additionally, I coded code to recognize ASL numbers in real-time with the laptop's built-in camera using OpenCV. I can recognize the laptop user's hand gestures in real-time, which makes it easy to see which hand gestures the model is confused about.
+2. create_dataset.ipynb \n
+Extract the hand landmark coordinate values using Mediapipe from the 600 hand images and save them to the data.pickle file along with the label values (1~10). 
+3. train_classifier.ipynb \n
+Train the MLP using the ./data.pickle file containing the hand landmark coordinate values and label values, and save the MLP model parameters in the ./model.p file. 
+4. inference_movie.ipynb \n
+This code inferred the hand images in the ./TermProjectSample.mp4 file using the ./model.p file and saved the output values in the ./answer/answers.txt file. Because the .mp4 file is running at 30 FPS and each image lasts 0.5 seconds, there are 15 frames for each image. The inference is performed on each frame, and because saving the output value to the .txt file after each inference saves the same value 15 times, the output value for each of the 15 frames can only be saved once in the . txt file. 
+5. inference.ipynb \n
+Additionally, I coded code to recognize ASL numbers in real-time with the laptop's built-in camera using OpenCV. I can recognize the laptop user's hand gestures in real-time, which makes it easy to see which hand gestures the model is confused about.
 
 # 3) Results
 80% accuracy at TermProjectSample.mp4.
